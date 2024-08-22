@@ -59,7 +59,7 @@ public class Blackjack extends JFrame implements ActionListener {
     int dinitial;
 
     public static void main (String[] args){
-        BlackJackGame Gui = new BlackJackGame();
+        BlackJack Gui = new BlackJack();
         Gui.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
     public BlackJackGame () {
@@ -171,7 +171,7 @@ public class Blackjack extends JFrame implements ActionListener {
                 betTotal = 0.00;
                 stats[1].setText("Bet Total: $" + betTotal);
                 clearHand();
-                gotoContınue();
+                gotoContinue();
             }
         }
         if(c.getText().equals("Stay")){
@@ -546,7 +546,7 @@ public class Blackjack extends JFrame implements ActionListener {
 
         }
     }
-    public void paint(Graphichs g){
+    public void paint(Graphics g){
         super.paint(g);
         if(pCards[0] != null)
             g.drawImage(pCards[0], 100, 300, null);
